@@ -47,7 +47,7 @@ const Main = () => {
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
             {ContactList.map((e) => (
-              <ContactsButtons link={e.link} icon={e.component}  />
+              <ContactsButtons link={e.link} icon={e.component} key={e}  />
             ))}
           </div>
         </div>
