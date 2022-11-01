@@ -4,6 +4,31 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
+const ContactList = [
+  {
+    link: "https://www.linkedin.com/in/gerset-l-622b1a144/",
+    component: <FaLinkedinIn/>
+  },
+  {
+    link:"https://github.com/JudahAvadom",
+    component:<FaGithub/>
+  }
+]
+
+const ContactsButtons = ({ link, icon }) => {
+  return (
+    <a
+      href={link}
+      target='_blank'
+      rel='noreferrer'
+    >
+      <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+        {icon}
+      </div>
+    </a>
+  )
+}
+
 const Main = () => {
   return (
     <div id='home' className='w-full h-screen text-center'>
@@ -21,34 +46,9 @@ const Main = () => {
             with the best technologies.
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-            <a
-              href='https://www.linkedin.com/in/gerset-l-622b1a144/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <FaLinkedinIn />
-              </div>
-            </a>
-            <a
-              href='https://github.com/fireclint'
-              target='_blank'
-              rel='noreferrer'
-            >
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <FaGithub />
-              </div>
-            </a>
-            <Link href='/#contact'>
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <AiOutlineMail />
-              </div>
-            </Link>
-            <Link href='/resume'>
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <BsFillPersonLinesFill />
-              </div>
-            </Link>
+            {ContactList.map((e) => (
+              <ContactsButtons link={e.link} icon={e.component}  />
+            ))}
           </div>
         </div>
       </div>
