@@ -1,7 +1,4 @@
-import Link from 'next/link';
 import React from 'react';
-import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const ContactList = [
@@ -42,12 +39,12 @@ const Main = () => {
           </h1>
           <h1 className='py-2 text-gray-700'>A Full Stack Developer</h1>
           <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto'>
-            I’m focused on building fullstack web and mobile applications
+            I&#39;m focused on building fullstack web and mobile applications
             with the best technologies.
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-            {ContactList.map((e) => (
-              <ContactsButtons link={e.link} icon={e.component} key={e}  />
+            {ContactList.map((e, key) => (
+              <ContactsButtons link={e.link} icon={e.component} key={key}  />
             ))}
           </div>
         </div>

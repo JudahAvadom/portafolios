@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-import Cars from "../public/assets/projects/cars.jpg"
 import { RiRadioButtonFill } from 'react-icons/ri';
 
 const Dealer = [
@@ -36,7 +35,7 @@ const cars = () => {
                     className='absolute z-1'
                     layout='fill'
                     objectFit='cover'
-                    src={Cars}
+                    src="/assets/projects/cars.jpg"
                     alt='/'
                 />
                 <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>

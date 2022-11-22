@@ -1,7 +1,5 @@
 import React from 'react';
 import ProjectItem from './ProjectItem';
-import WhatsappItem from "../public/assets/projects/whatsapp.jpg";
-import Cars from "../public/assets/projects/cars.jpg"
 
 const Projects = () => {
   return (
@@ -14,13 +12,13 @@ const Projects = () => {
         <div className='grid md:grid-cols-2 gap-8'>
           <ProjectItem
             title='Whatsapp Clone'
-            backgroundImg={WhatsappItem}
+            backgroundImg="/assets/projects/whatsapp.jpg"
             projectUrl='https://github.com/JudahAvadom/whatsapp-clone'
             tech='React Native & Firebase'
           />
           <ProjectItem
             title='Cars Ecommerce'
-            backgroundImg={Cars}
+            backgroundImg="/assets/projects/cars.jpg"
             projectUrl='/cars'
             tech='Javascript, Pug & MongoDB'
           />
