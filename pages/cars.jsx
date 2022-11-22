@@ -61,7 +61,7 @@ const cars = () => {
                                         className="text-xl flex hover:text-blue-500"
                                     >
                                         <RiRadioButtonFill className='pr-1' />
-                                        <a href={e.url} target="_blank">{e.name}</a>
+                                        <a href={e.url} target="_blank" rel="noreferrer">{e.name}</a>
                                     </li>
                                 ))}
                             </ul>
