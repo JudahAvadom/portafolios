@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectItem from './ProjectItem';
-import WhatsappItem from "../public/assets/projects/whatsapp.jpg"
+import WhatsappItem from "../public/assets/projects/whatsapp.jpg";
+import Cars from "../public/assets/projects/cars.jpg"
 
 const Projects = () => {
   return (
@@ -16,6 +17,12 @@ const Projects = () => {
             backgroundImg={WhatsappItem}
             projectUrl='https://github.com/JudahAvadom/whatsapp-clone'
             tech='React Native & Firebase'
+          />
+          <ProjectItem
+            title='Cars Ecommerce'
+            backgroundImg={Cars}
+            projectUrl='/cars'
+            tech='Javascript, Pug & MongoDB'
           />
         </div>
       </div>
