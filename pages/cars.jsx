@@ -23,6 +23,21 @@ const Dealer = [
     {
         name:"Driven Boise",
         url:"https://drivenboise-dev.321ignition.info/"
+    },
+    {   name: "Jarrard Pre-Owned",
+        url: "https://jarrardpreowned-dev.321ignition.info/"
+    },
+    {
+        name:"Inspired Autosales",
+        url:"https://inspiredautosales-dev.321ignition.info/"
+    },
+    {
+        name: "Dash Carsc",
+        url: "https://dashcarsct-dev.321ignition.info"
+    },
+    {
+        name:"AutoTrek",
+        url:"https://autotrek-dev.321ignition.info/"
     }
 ]
 
